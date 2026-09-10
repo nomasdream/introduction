@@ -136,7 +136,10 @@
       font-size: 1.05rem;
       padding: 16px 0;
       border-radius: 12px;
+      border: none;
+      cursor: pointer;
       transition: background-color 0.2s ease;
+      text-align: center;
     }
     .btn-buy:hover {
       background-color: var(--point-hover);
@@ -216,10 +219,10 @@
         <div class="price">60,000원</div>
         <span class="shipping-tag">무료배송 / 한정 수량 예약 판매</span>
         
-        <!-- 네이버 스마트스토어가 열리면 정확한 상품 URL 또는 스토어 메인 URL을 입력하세요 -->
-        <a href="https://smartstore.naver.com" target="_blank" class="btn-buy">
+        <!-- 환경 자동 감지 구매 버튼 -->
+        <button type="button" class="btn-buy" onclick="openSmartStore()">
           네이버 스마트스토어로 구매하기
-        </a>
+        </button>
       </div>
     </main>
 
@@ -241,7 +244,7 @@
         <strong>사업장 소재지:</strong> 경상북도 경산시 하양읍 가마실2길 17, 2층
       </p>
       <p>
-        <strong>고객센터:</strong> <!-- 전화번호 입력 --> 070-0000-0000<span class="footer-divider">|</span>
+        <strong>고객센터:</strong> 070-0000-0000<span class="footer-divider">|</span>
         <strong>이메일:</strong> nomasdream@gmail.com
       </p>
       <p>
@@ -259,6 +262,21 @@
     </footer>
 
   </div>
+
+  <script>
+    function openSmartStore() {
+      // 기기 User-Agent 감지
+      const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      
+      // 모바일: m.smartstore.naver.com / PC: smartstore.naver.com
+      const targetUrl = isMobile 
+        ? "https://m.smartstore.naver.com/nomasdream" 
+        : "https://smartstore.naver.com/nomasdream";
+
+      // 새 창(탭)으로 열기
+      window.open(targetUrl, "_blank");
+    }
+  </script>
 
 </body>
 </html>
