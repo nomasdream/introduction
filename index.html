@@ -10,7 +10,7 @@
       --card-bg: #1e1e1e;
       --text-main: #f5f5f5;
       --text-sub: #a0a0a0;
-      --point-color: #E89B93; /* 로고 살몬 핑크 */
+      --point-color: #E89B93;
       --point-hover: #d7877f;
       --border-color: #2e2e2e;
     }
@@ -34,7 +34,6 @@
       gap: 28px;
     }
 
-    /* 상단 프로필 & 로고 */
     .header {
       text-align: center;
       padding: 20px 0 10px;
@@ -69,7 +68,6 @@
       font-weight: 600;
     }
 
-    /* 메인 카드 */
     .card {
       background-color: var(--card-bg);
       border: 1px solid var(--border-color);
@@ -77,7 +75,6 @@
       padding: 24px;
     }
 
-    /* 스토리 섹션 */
     .story-section p {
       font-size: 0.95rem;
       color: #dcdcdc;
@@ -89,7 +86,6 @@
       font-weight: 600;
     }
 
-    /* 스펙 태그 */
     .specs-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -113,7 +109,6 @@
       font-weight: 600;
     }
 
-    /* 가격 & 구매 버튼 */
     .pricing-box {
       text-align: center;
       margin-top: 10px;
@@ -147,32 +142,49 @@
       background-color: var(--point-hover);
     }
 
-    /* 푸터 (사업자 정보 - 식품위생법/전자상거래법 준수) */
+    /* 전자상거래법 준수 법정 Footer */
     .footer {
       border-top: 1px solid var(--border-color);
-      padding-top: 20px;
+      padding-top: 24px;
       font-size: 0.75rem;
-      color: #707070;
-      line-height: 1.7;
+      color: #888888;
+      line-height: 1.8;
+      word-break: keep-all;
     }
-    .footer p { margin-bottom: 2px; }
+    .footer strong {
+      color: #b0b0b0;
+    }
+    .footer-divider {
+      color: #444444;
+      margin: 0 4px;
+    }
+    .footer-links {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px dashed #2a2a2a;
+    }
+    .footer-links a {
+      color: #999;
+      text-decoration: none;
+      margin-right: 12px;
+    }
+    .footer-links a:hover {
+      color: var(--point-color);
+    }
   </style>
 </head>
 <body>
 
   <div class="container">
     
-    <!-- 브랜드 헤더 -->
     <header class="header">
       <div class="logo-box">
-        <!-- 로고 이미지 파일명을 logo.jpg로 올려두시면 자동 표시됩니다 -->
-        <img src="NoMasDreamCoffee.png" alt="NoMasDream Logo" onerror="this.style.display='none'">
+        <img src="logo.jpg" alt="NoMasDream Logo" onerror="this.style.display='none'">
       </div>
       <h1 class="title">NO MAS DREAM COFFEE</h1>
       <p class="subtitle">COLOMBIA DIRECT SPECIALTY</p>
     </header>
 
-    <!-- 제품 소개 및 스토리 -->
     <main class="card">
       <section class="story-section">
         <p>콜롬비아 안데스 고산지대 농장에서 직접 셀렉트한 <span class="story-highlight">100% 콜롬비아 직수입 마이크로랏</span>입니다.</p>
@@ -200,25 +212,50 @@
 
       <div style="margin: 24px 0 16px; border-top: 1px dashed var(--border-color);"></div>
 
-      <!-- 구매 영역 -->
       <div class="pricing-box">
         <div class="price">60,000원</div>
         <span class="shipping-tag">무료배송 / 한정 수량 예약 판매</span>
         
-        <!-- 추후 스마트스토어 상품 URL을 href에 넣으시면 됩니다 -->
+        <!-- 네이버 스마트스토어가 열리면 정확한 상품 URL 또는 스토어 메인 URL을 입력하세요 -->
         <a href="https://smartstore.naver.com" target="_blank" class="btn-buy">
           네이버 스마트스토어로 구매하기
         </a>
       </div>
     </main>
 
-    <!-- 하단 법적 고지 (사업장 정보) -->
+    <!-- 대한민국 전자상거래법 및 식품위생법 규정 준수 푸터 -->
     <footer class="footer">
-      <p><strong>상호명:</strong> 노마스드림커피 | <strong>대표자:</strong> 권영철</p>
-      <p><strong>사업장 소재지:</strong> 경상북도 경산시 하양읍 가마실2길 17, 2층</p>
-      <p><strong>수입식품등수입·판매업 영업등록:</strong> 식약처 정식 등록 완료</p>
-      <p><strong>통관고유부호:</strong> 노마스드5261018</p>
-      <p style="margin-top: 6px;">© 2026 NoMasDream Coffee. All rights reserved.</p>
+      <p>
+        <strong>상호명:</strong> 노마스드림커피<span class="footer-divider">|</span>
+        <strong>대표자:</strong> 권영철
+      </p>
+      <p>
+        <strong>사업자등록번호:</strong> <!-- 여기에 사업자번호 10자리 입력 (예: 000-00-00000) --> 000-00-00000<span class="footer-divider">|</span>
+        <strong>통신판매업신고:</strong> <!-- 예: 제 2026-경북경산-0000 호 --> 신고 준비중
+      </p>
+      <p>
+        <strong>수입식품등수입·판매업 영업등록:</strong> 식약처 정식 등록 완료<span class="footer-divider">|</span>
+        <strong>통관고유부호:</strong> 노마스드5261018
+      </p>
+      <p>
+        <strong>사업장 소재지:</strong> 경상북도 경산시 하양읍 가마실2길 17, 2층
+      </p>
+      <p>
+        <strong>고객센터:</strong> <!-- 전화번호 입력 --> 010-0000-0000<span class="footer-divider">|</span>
+        <strong>이메일:</strong> <!-- 이메일 주소 입력 --> contact@nomasdream.com
+      </p>
+      <p>
+        <strong>호스팅 서비스 제공자:</strong> GitHub, Inc.
+      </p>
+
+      <div class="footer-links">
+        <a href="#none">이용약관</a>
+        <a href="#none">개인정보처리방침</a>
+      </div>
+
+      <p style="margin-top: 12px; color: #555;">
+        © 2026 NoMasDream Coffee. All rights reserved.
+      </p>
     </footer>
 
   </div>
