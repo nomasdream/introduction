@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>브랜드 스토리 - NoMasDream Specialty Coffee</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --card-bg: #1e1e1e;
+      --text-main: #f5f5f5;
+      --text-sub: #a0a0a0;
+      --point-color: #E89B93;
+      --border-color: #2e2e2e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", sans-serif;
+      line-height: 1.8;
+      display: flex;
+      justify-content: center;
+      padding: 24px 16px 60px;
+    }
+    .container { width: 100%; max-width: 580px; }
+    
+    .back-btn {
+      display: inline-block;
+      color: var(--point-color);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    
+    h1 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 1.4;
+      margin-bottom: 16px;
+      word-break: keep-all;
+    }
+
+    .brand-definition {
+      font-size: 0.95rem;
+      color: #b8b8b8;
+      margin-bottom: 24px;
+      word-break: keep-all;
+    }
+    
+    .values-box {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+    }
+    .value-tag {
+      background: #252525;
+      border: 1px solid var(--border-color);
+      color: var(--point-color);
+      font-size: 0.82rem;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+    
+    .section {
+      margin-bottom: 32px;
+      border-bottom: 1px dashed var(--border-color);
+      padding-bottom: 28px;
+    }
+    .section:last-child {
+      border-bottom: none;
+    }
+    
+    h2 {
+      font-size: 1.15rem;
+      color: var(--point-color);
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+    
+    p {
+      font-size: 0.92rem;
+      color: #d0d0d0;
+      margin-bottom: 14px;
+      word-break: keep-all;
+    }
+    
+    .quote-box {
+      background-color: var(--card-bg);
+      border-left: 3px solid var(--point-color);
+      padding: 16px;
+      border-radius: 0 10px 10px 0;
+      margin: 16px 0;
+      font-size: 0.9rem;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="index.html" class="back-btn">← 메인 화면으로 돌아가기</a>
+    
+    <h1>No Mas Dream:<br>더 이상 꿈이 아닌, 진짜 비즈니스</h1>
+    <p class="brand-definition">
+      '노마스드림(No Más Dream)'은 더 이상 머릿속 꿈에 머물지 않고, 어릴 적부터 품어온 정직하고 실재하는 비즈니스를 시작한다는 약속입니다.
+    </p>
+    
+    <div class="values-box">
+      <span class="value-tag">정직 (Integrity)</span>
+      <span class="value-tag">존중 (Respect)</span>
+      <span class="value-tag">지속가능 (Sustainability)</span>
+    </div>
+
+    <div class="section">
+      <h2>1. 정직 (Integrity): 전문가 행세는 하지 않습니다</h2>
+      <p>저는 화려한 타이틀을 앞세우는 커피 감별사가 아닙니다. 콜롬비아 현지에서 시스템을 만들고 기술을 다루는 엔지니어로서, 제가 맛보고 반한 진짜 좋은 커피를 속임 없이 전달하는 가교 역할을 할 뿐입니다.</p>
+      <p>산미만 지나치게 튀는 일반적인 상업 커피와 달리, 기분 좋은 향과 탄탄한 밸런스로 한국인의 입맛을 사로잡을 정직한 원두만을 선별합니다. 이 균형 잡힌 한 잔을 소개하기 위해 복잡한 수입 인허가와 식품 검역을 직접 거쳤습니다.</p>
+    </div>
+
+    <div class="section">
+      <h2>2. 초신선 직배송: 생두를 한국에 쌓아두지 않는 이유</h2>
+      <p>커피의 잠재력을 가장 잘 끌어내는 사람은 수천 킬로미터 밖의 가공 공장이 아니라, 흙과 날씨를 매일 마주하는 현지 농장주와 수십 년 경험을 지닌 현지 마스터 로스터입니다.</p>
+      <p>노마스드림은 대량의 생두를 들여와 장기간 보관하며 볶지 않습니다. 안데스 현지에서 생두의 컨디션을 직접 보며 최적의 포인트로 로스팅한 직후, 가장 신선한 상태 그대로 항공을 통해 한국으로 보냅니다.</p>
+    </div>
+
+    <div class="section">
+      <h2>3. 존중과 지속가능 (Respect & Sustainability)</h2>
+      <div class="quote-box">
+        "소비자에게 만 원 한 장의 차이는 사소할 수 있지만, 농가에게는 흑자와 적자를 가르는 생존의 문제입니다."
+      </div>
+      <p>우리는 중간 유통 마진을 취하며 가격을 후려치는 거래를 거부합니다. 농가에 소매가에 가까운 정당한 대가를 지불하는 것은 농부에 대한 당연한 <strong>존중(Respect)</strong>이며, 타협 없는 최상급 마이크로랏을 지켜내는 <strong>지속가능(Sustainability)</strong>의 유일한 길입니다.</p>
+      <p>첫 여정은 콜롬비아 후일라(Huila) 주 농장주님과의 끈끈한 인연에서 시작되었습니다. 농가가 현지 내수 시장에서도 정당한 수익을 낼 수 있도록 배려하며, 서로가 오래 상생할 수 있는 1:1 직거래만을 고집합니다.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. 타협 없는 한정 수량</h2>
+      <p>진정한 마이크로랏은 결코 대량 생산될 수 없습니다. 한 농가에서 한 번에 공급 가능한 수량은 약 150여 개 안팎으로 엄격히 한정되어 있습니다.</p>
+      <p>만약 수확 상태나 향미가 우리의 기대치에 미치지 못한다면, 한국으로 들여오는 물량을 스스로 줄입니다. 매월 공급되는 물량은 농가가 보증하는 한계 수량 내에서만 엄선하여 선보입니다.</p>
+      <p style="color: var(--point-color); font-weight: 600; margin-top: 16px;">
+        첫 번째 에디션은 2027년 1월 정식 오픈하며, 1월 말 단 50봉 한정으로 첫 배송을 시작합니다.
+      </p>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="index.html" class="back-btn" style="font-size: 1rem;">메인으로 돌아가기 →</a>
+    </div>
+  </div>
+</body>
+</html>
