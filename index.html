@@ -1,21 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="naver-site-verification" content="45b519a74d875b29985fa9fd3059623a3de5b60d" />
-  <title>NoMasDream Specialty Coffee | 노마스드림커피</title>
-  <meta name="description" content="콜롬비아 안데스 고산지대 단일 농장에서 직수입한 100% 프리미엄 마이크로랏 스페셜티 커피 원두">
-  <link rel="canonical" href="[https://nomasdream.com/](https://nomasdream.com/)">
-
-  <!-- Open Graph / SEO -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="[https://nomasdream.com/](https://nomasdream.com/)">
-  <meta property="og:title" content="노마스드림커피 - 콜롬비아 직수입 스페셜티 마이크로랏">
-  <meta property="og:description" content="현지 단일 농장 직수입, 투명한 다이렉트 트레이드로 전하는 프리미엄 콜롬비아 스페셜티 커피">
-  <meta property="og:image" content="[https://nomasdream.com/NoMasDreamCoffee.png](https://nomasdream.com/NoMasDreamCoffee.png)">
-
+  <title>NoMasDream Specialty Coffee</title>
   <style>
     :root {
       --bg-color: #121212;
@@ -98,11 +86,23 @@
       font-weight: 600;
     }
 
+    /* 스토리 링크 버튼 */
+    .story-link-btn {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 0.85rem;
+      color: var(--point-color);
+      text-decoration: none;
+      font-weight: 600;
+      border-bottom: 1px dashed var(--point-color);
+      padding-bottom: 2px;
+    }
+
     .specs-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
-      margin-top: 16px;
+      margin-top: 18px;
     }
     .spec-item {
       background: #171717;
@@ -157,7 +157,7 @@
       background-color: var(--point-hover);
     }
 
-    /* 법정 Footer */
+    /* 전자상거래법 준수 법정 Footer */
     .footer {
       border-top: 1px solid var(--border-color);
       padding-top: 24px;
@@ -202,25 +202,28 @@
 
     <main class="card">
       <section class="story-section">
-        <p>콜롬비아 안데스 고산지대 농장에서 직접 셀렉트한 <span class="story-highlight">100% 콜롬비아 직수입 마이크로랏</span>입니다.</p>
-        <p>대량 유통되는 상업용 커피와 달리, 현지에서 신선하게 로스팅되어 정식 통관을 거쳐 한국으로 직송됩니다.</p>
+        <p>콜롬비아 안데스 농장주와 직접 손잡고 선보이는 <span class="story-highlight">초신선 직수입 마이크로랏</span>입니다.</p>
+        <p>현지 농가와 전문 로스터가 직접 볶아 항공 특송으로 가장 신선한 상태 그대로 한국에 전달합니다.</p>
+        <div>
+          <a href="story.html" class="story-link-btn">노마스드림 이야기 자세히 보기 →</a>
+        </div>
         
         <div class="specs-grid">
           <div class="spec-item">
-            <span class="spec-label">원산지</span>
-            <span class="spec-value">콜롬비아 (Colombia)</span>
+            <span class="spec-label">생산지</span>
+            <span class="spec-value">콜롬비아 후일라 (Huila)</span>
           </div>
           <div class="spec-item">
             <span class="spec-label">내용량</span>
-            <span class="spec-value">500g (단품)</span>
+            <span class="spec-value">500g (Whole Bean)</span>
           </div>
           <div class="spec-item">
-            <span class="spec-label">로스팅 상태</span>
-            <span class="spec-value">원두 (Whole Bean)</span>
+            <span class="spec-label">1차 오픈 일정</span>
+            <span class="spec-value">2027년 1월 오픈</span>
           </div>
           <div class="spec-item">
-            <span class="spec-label">배송 방식</span>
-            <span class="spec-value">국내 무료 배송</span>
+            <span class="spec-label">배송 및 수량</span>
+            <span class="spec-value">1월 말 / 50봉 한정</span>
           </div>
         </div>
       </section>
@@ -229,10 +232,9 @@
 
       <div class="pricing-box">
         <div class="price">65,000원</div>
-        <span class="shipping-tag">무료배송 / 한정 수량 예약 판매</span>
+        <span class="shipping-tag">국내 무료배송 / 월별 엄선 한정 수량</span>
         
-        <!-- 환경 자동 분기 구매 버튼 -->
-        <a href="https://smartstore.naver.com/nomasdream" target="_blank" rel="noopener noreferrer" class="btn-buy">
+        <button type="button" class="btn-buy" onclick="openSmartStore()">
           네이버 스마트스토어로 구매하기
         </button>
       </div>
@@ -255,7 +257,7 @@
         <strong>사업장 소재지:</strong> 경상북도 경산시 하양읍 가마실2길 17, 2층
       </p>
       <p>
-        <strong>고객센터:</strong> 010-8019-0730<span class="footer-divider">|</span>
+        <strong>고객센터:</strong> 070-8019-0730<span class="footer-divider">|</span>
         <strong>이메일:</strong> nomasdream@gmail.com
       </p>
       <p>
@@ -263,6 +265,7 @@
       </p>
 
       <div class="footer-links">
+        <a href="story.html">브랜드 스토리</a>
         <a href="terms.html">이용약관</a>
         <a href="privacy.html">개인정보처리방침</a>
       </div>
@@ -278,8 +281,8 @@
     function openSmartStore() {
       const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
       const targetUrl = isMobile 
-        ? "[https://m.smartstore.naver.com/nomasdream](https://m.smartstore.naver.com/nomasdream)" 
-        : "[https://smartstore.naver.com/nomasdream](https://smartstore.naver.com/nomasdream)";
+        ? "https://m.smartstore.naver.com/nomasdream" 
+        : "https://smartstore.naver.com/nomasdream";
       window.open(targetUrl, "_blank");
     }
   </script>
