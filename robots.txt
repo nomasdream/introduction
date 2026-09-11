@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: [https://nomasdream.com/sitemap.xml](https://nomasdream.com/sitemap.xml)
