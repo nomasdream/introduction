@@ -192,6 +192,17 @@
     .footer-links a:hover {
       color: var(--point-color);
     }
+    .spec-item-link {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      transition: border-color 0.2s ease, transform 0.15s ease;
+    }
+    .spec-item-link:hover,
+    .spec-item-link:active {
+      border-color: var(--point-color);
+      transform: translateY(-1px);
+    }
   </style>
 </head>
 <body>
@@ -215,10 +226,10 @@
         </div>
         
         <div class="specs-grid">
-          <div class="spec-item">
+          <a href="pages/huila.html" class="spec-item spec-item-link">
             <span class="spec-label">생산지</span>
             <span class="spec-value">콜롬비아 후일라 (Huila)</span>
-          </div>
+          </a>
           <div class="spec-item">
             <span class="spec-label">내용량</span>
             <span class="spec-value">500g (Whole Bean)</span>
