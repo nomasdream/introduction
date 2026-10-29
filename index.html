@@ -160,6 +160,13 @@
       margin-bottom: 12px;
       word-break: keep-all;
     }
+    .intro {
+      text-align: center;
+      padding: 0 8px;
+    }
+    .intro p {
+      margin-bottom: 0;
+    }
     .story-highlight {
       color: var(--point-color);
       font-weight: 600;
@@ -181,7 +188,6 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 12px;
-      margin-top: 18px;
     }
     .spec-item {
       background: #171717;
@@ -291,40 +297,9 @@
       <h1 class="title">스페셜티 중에서, 스페셜을 고릅니다</h1>
     </header>
 
-    <main class="card">
-      <section class="story-section">
-        <p>제가 콜롬비아 곳곳을 돌며 직접 마셔 보고 고른 <span class="story-highlight">안데스 후일라의 싱글오리진 홀빈 원두</span>입니다.</p>
-        <div class="specs-grid">
-          <a href="pages/huila.html" class="spec-item spec-item-link">
-            <span class="spec-label">생산지</span>
-            <span class="spec-value">콜롬비아 후일라 (Huila)</span>
-          </a>
-          <a href="pages/cenicafe1.html" class="spec-item spec-item-link">
-            <span class="spec-label">품종</span>
-            <span class="spec-value">CENICAFE1 (세니카페1)</span>
-          </a>
-          <div class="spec-item">
-            <span class="spec-label">내용량</span>
-            <span class="spec-value">500g (Whole Bean)</span>
-          </div>
-          <div class="spec-item">
-            <span class="spec-label">1차 오픈 일정</span>
-            <span class="spec-value">2027년 1월 오픈 · 50봉 한정</span>
-          </div>
-        </div>
-      </section>
-
-      <div style="margin: 24px 0 16px; border-top: 1px dashed var(--border-color);"></div>
-
-      <div class="pricing-box">
-        <div class="price">65,000원</div>
-        <span class="shipping-tag">국내 무료배송 / 월별 엄선 한정 수량</span>
-        
-        <button type="button" class="btn-buy" onclick="openSmartStore()">
-          네이버 스마트스토어로 구매하기
-        </button>
-      </div>
-    </main>
+    <section class="story-section intro">
+      <p>제가 콜롬비아 곳곳을 돌며 직접 마셔 보고 고른 <span class="story-highlight">안데스 후일라의 싱글오리진 홀빈 원두</span>입니다.</p>
+    </section>
 
     <section class="values">
       <div class="value-item">
@@ -349,6 +324,38 @@
       <a href="pages/story.html" class="story-link-btn">노마스드림 이야기 자세히 보기 →</a>
       <p class="closing-sign">Single Origin. Direct Select. Air Express.<span>— NoMasDream Specialty Coffee</span></p>
     </section>
+
+    <main class="card">
+      <div class="specs-grid">
+        <a href="pages/huila.html" class="spec-item spec-item-link">
+          <span class="spec-label">생산지</span>
+          <span class="spec-value">콜롬비아 후일라 (Huila)</span>
+        </a>
+        <a href="pages/cenicafe1.html" class="spec-item spec-item-link">
+          <span class="spec-label">품종</span>
+          <span class="spec-value">CENICAFE1 (세니카페1)</span>
+        </a>
+        <div class="spec-item">
+          <span class="spec-label">내용량</span>
+          <span class="spec-value">500g (Whole Bean)</span>
+        </div>
+        <div class="spec-item">
+          <span class="spec-label">1차 오픈 일정</span>
+          <span class="spec-value">2027년 1월 오픈 · 50봉 한정</span>
+        </div>
+      </div>
+
+      <div style="margin: 24px 0 16px; border-top: 1px dashed var(--border-color);"></div>
+
+      <div class="pricing-box">
+        <div class="price">65,000원</div>
+        <span class="shipping-tag">국내 무료배송 / 월별 엄선 한정 수량</span>
+        
+        <button type="button" class="btn-buy" onclick="openSmartStore()">
+          네이버 스마트스토어로 구매하기
+        </button>
+      </div>
+    </main>
 
     <footer class="footer">
       <p>
